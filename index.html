@@ -8,6 +8,13 @@
     <script src="https://kit.fontawesome.com/c2687a69c6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
     <title>Bangladesh Cricket Club</title>
 </head>
 
@@ -90,7 +97,7 @@
                         <div class="flex space-x-5 text-center px-2 text-slate-300">
                             <h5 class="text-justify">5000+ Runs</h5>
                             <i class="fa-solid fa-circle pt-3"></i>
-                            <h5>500+ Dismisal</h5>
+                            <h5>500+ Dismissal</h5>
                         </div>
                         <button
                             class="w-4/5 py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg mt-2">Select</button>
@@ -120,7 +127,52 @@
                         <div class="flex space-x-5 text-center px-2 text-slate-300">
                             <h5 class="text-justify">1000+ Runs</h5>
                             <i class="fa-solid fa-circle pt-3"></i>
-                            <h5>100+ Dismisal</h5>
+                            <h5>100+ Dismissal</h5>
+                        </div>
+                        <button
+                            class="w-4/5 py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg mt-2">Select</button>
+                    </div>
+                </div>
+
+                <div class="max-w-sm rounded-lg border border-gray-200 shadow-md bg-black h-96">
+                    <img class="w-full h-56" src="images/sabbir.jpg" alt="">
+                    <div class="p-5 text-center">
+                        <h5 class="mb-2 text-xl font-bold text-white">Sabbir Rahman
+                        </h5>
+                        <div class="flex space-x-5 text-center px-2 text-slate-300">
+                            <h5 class="text-justify">2000+ Runs</h5>
+                            <i class="fa-solid fa-circle pt-3"></i>
+                            <h5>80+ Wickets</h5>
+                        </div>
+                        <button
+                            class="w-4/5 py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg mt-2">Select</button>
+                    </div>
+                </div>
+
+                <div class="max-w-sm rounded-lg border border-gray-200 shadow-md bg-black h-96">
+                    <img class="w-full h-56" src="images/tamim.jpg" alt="">
+                    <div class="p-5 text-center">
+                        <h5 class="mb-2 text-xl font-bold text-white">Tamim Iqbal
+                        </h5>
+                        <div class="flex space-x-5 text-center px-2 text-slate-300">
+                            <h5 class="text-justify">8000+ Runs</h5>
+                            <i class="fa-solid fa-circle pt-3"></i>
+                            <h5>100+ Catches</h5>
+                        </div>
+                        <button
+                            class="w-4/5 py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg mt-2">Select</button>
+                    </div>
+                </div>
+
+                <div class="max-w-sm rounded-lg border border-gray-200 shadow-md bg-black h-96">
+                    <img class="w-full h-56" src="images/nasir.jpg" alt="">
+                    <div class="p-5 text-center">
+                        <h5 class="mb-2 text-xl font-bold text-white">Nasir Hossain
+                        </h5>
+                        <div class="flex space-x-5 text-center px-2 text-slate-300">
+                            <h5 class="text-justify">1000+ Runs</h5>
+                            <i class="fa-solid fa-circle pt-3"></i>
+                            <h5>30+ Wickets</h5>
                         </div>
                         <button
                             class="w-4/5 py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg mt-2">Select</button>
@@ -129,8 +181,59 @@
 
             </section>
 
+            <section class="w-1/4">
+                <div
+                    class="text-white font-medium px-8 mt-12 max-w-sm rounded-lg border border-gray-200 shadow-md bg-black h-96 ml-3">
+                    <h1 class="text-2xl font-bold text-center my-12">Selected-V</h1>
+                    <ul>
+                        <ol class="text-slate-400 font-bold text-xl mb-4">1. <span id="selected-player-1"></span></ol>
+                        <ol class="text-slate-400 font-bold text-xl mb-4">2. <span id="selected-player-2"></span></ol>
+                        <ol class="text-slate-400 font-bold text-xl mb-4">3. <span id="selected-player-3"></span></ol>
+                        <ol class="text-slate-400 font-bold text-xl mb-4">4. <span id="selected-player-4"></span></ol>
+                        <ol class="text-slate-400 font-bold text-xl mb-4">5. <span id="selected-player-5"></span></ol>
+                    </ul>
+                </div>
 
-        </section>
+                <div
+                    class="text-white font-medium w-full px-8 mt-12 rounded-lg border border-gray-200 shadow-md bg-black ml-3">
+                    <h1 class="text-2xl font-bold text-center mt-12 mb-8">Budget</h1>
+
+                    <div class="grid grid-cols-2 text-slate-400">
+                        <h3 class="pt-1">Per Player</h3>
+                        <input class="bg-black border border-gray-200 rounded pl-2 py-1 w-full" type="number" name=""
+                            id="per-player" placeholder="Amount">
+                    </div>
+                    <button class="w-full py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded mt-5"
+                        id="calculate">Calculate</button>
+
+                    <div class="flex">
+                        <h3 class="pt-1 mr-4 text-slate-400">Player Expenses:</h3>
+                        <h3 class="pt-1">$<span id="palyer-expenses"></span></h3>
+                    </div>
+
+                    <div class="grid grid-cols-2 my-3">
+                        <h3 class="pt-1 text-slate-400">Manager</h3>
+                        <input class="bg-black border border-gray-200 rounded pl-2 py-1 w-full" type="number" name=""
+                            id="manager" placeholder="Amount">
+                    </div>
+
+                    <div class="grid grid-cols-2">
+                        <h3 class="pt-1 text-slate-400">Coach</h3>
+                        <input class="bg-black border border-gray-200 rounded pl-2 py-1 w-full" type="number" name=""
+                            id="coach" placeholder="Amount">
+                    </div>
+
+                    <button
+                        class="w-full py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded mt-5 mb-3"
+                        id="calculate-total">Calculate Total</button>
+
+                    <div class="flex">
+                        <h3 class="pt-1 mr-12 text-slate-400">Total:</h3>
+                        <h3 class="pt-1 ml-11 mb-12 text-amber-700 font-bold">$<span id="total"></span></h3>
+                    </div>
+
+                </div>
+            </section>
     </main>
 </body>
 
