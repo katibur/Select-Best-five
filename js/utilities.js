@@ -35,7 +35,6 @@ function playerName(playerNameId, playerButton) {
     })
 }
 
-
 // validation for per-player expense's input field
 function perPlayerExpense() {
     const perPlayerExpenseInput = document.getElementById('per-player');
@@ -45,7 +44,6 @@ function perPlayerExpense() {
         return;
     }
 }
-
 
 document.getElementById('calculate').addEventListener('click', function () {
 
@@ -63,7 +61,6 @@ document.getElementById('calculate').addEventListener('click', function () {
     playerExpenseShown.innerText = parseFloat(playerExpense.toFixed('2'));
 })
 
-
 // validation for manager expense's input field
 function managerExpense() {
     const managerExpenseInput = document.getElementById('manager');
@@ -74,7 +71,6 @@ function managerExpense() {
     }
 }
 
-
 // validation for coach expense's input field
 function coachExpense() {
     const coachExpenseInput = document.getElementById('coach');
@@ -84,7 +80,6 @@ function coachExpense() {
         return;
     }
 }
-
 
 // calculate the total amount
 document.getElementById('calculate-total').addEventListener('click', function () {

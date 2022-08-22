@@ -8,6 +8,6 @@ playerName('liton-name', 'liton-select-btn');
 playerName('sabbir-name', 'sabbir-select-btn');
 playerName('tamim-name', 'tamim-select-btn');
 playerName('nasir-name', 'nasir-select-btn');
-
-
-
+playerName('rubel-name', 'rubel-select-btn');
+playerName('mustafiz-name', 'mustafiz-select-btn');
+playerName('taskin-name', 'taskin-select-btn');
