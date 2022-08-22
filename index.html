@@ -15,10 +15,12 @@
             margin: 0;
         }
     </style>
-    <title>Bangladesh Cricket Club</title>
+    <title>Bangladesh Cricket Board</title>
 </head>
 
 <body class="bg-zinc-800">
+
+    <!-- banner/header section -->
     <header class="w-full bg-black flex">
         <div class="w-80 mr-12">
             <img class="h-80 w-80" src="images/header-left.jpg" alt="">
@@ -32,14 +34,15 @@
             </p>
         </div>
         <div class="grid justify-items-center mr-12 mt-6">
-            <img class="h-32 w-32" src="images/header-right.jpg" alt="">
+            <img class="h-32 w-auto" src="images/header-right.png" alt="">
         </div>
+
     </header>
 
+    <!-- card and right sides's calculation part -->
     <main class="w-4/5 mx-auto">
         <section class="flex">
             <section class="grid grid-cols-3 gap-3 w-3/4 mx-auto pt-12">
-
                 <div class="max-w-sm rounded-lg border border-gray-200 shadow-md bg-black h-96">
                     <img class="w-full h-56" src="images/ashraful.jpg" alt="">
                     <div class="p-5 text-center">
@@ -220,17 +223,21 @@
 
             </section>
 
-            <section class="w-fit">
+            <!-- selected-v and calculation part -->
+            <section class="w-auto">
                 <div
                     class="text-white font-medium px-8 mt-12 max-w-sm rounded-lg border border-gray-200 shadow-md bg-black h-96 ml-3">
-                    <h1 class="text-2xl font-bold text-center my-12">Selected-V</h1>
+                    <h1 class="text-2xl font-bold text-center mt-12">Selected-V</h1>
+                    <img class="object-center mb-10" src="images/underline.jpg" alt="">
                     <div class="flex">
-                        <div class="text-slate-400 font-bold text-xl w-px ml-5">
-                            <p>1.</p>
-                            <p>2.</p>
-                            <p>3.</p>
-                            <p>4.</p>
-                            <p>5.</p>
+                        <div>
+                            <ul class="text-slate-400 font-bold text-xl w-px ml-5">
+                                <li>1.</li>
+                                <li>2.</li>
+                                <li>3.</li>
+                                <li>4.</li>
+                                <li>5.</li>
+                            </ul>
 
                         </div>
                         <div>
@@ -243,12 +250,13 @@
 
                 <div
                     class="text-white font-medium w-full px-8 mt-3 rounded-lg border border-gray-200 shadow-md bg-black ml-3 w-80">
-                    <h1 class="text-2xl font-bold text-center mt-12 mb-8">Budget</h1>
+                    <h1 class="text-2xl font-bold text-center mt-12">Budget</h1>
+                    <img class="object-center mb-10" src="images/underline.jpg" alt="">
 
                     <div class="grid grid-cols-2 text-slate-400">
                         <h3 class="pt-1">Per Player</h3>
                         <input class="bg-black border border-gray-200 rounded pl-2 py-1 w-full" type="number" name=""
-                            id="per-player" placeholder="Amount" onkeyup="perPlayerExpense()">
+                            id="per-player" placeholder="Amount">
                     </div>
                     <button class="w-full py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded mt-5"
                         id="calculate">Calculate</button>
@@ -260,15 +268,14 @@
 
                     <div class="grid grid-cols-2 my-3">
                         <h3 class="pt-1 text-slate-400">Manager</h3>
-                        <input onkeyup="managerExpense()"
-                            class="bg-black border border-gray-200 rounded pl-2 py-1 w-full" type="number" name=""
+                        <input class="bg-black border border-gray-200 rounded pl-2 py-1 w-full" type="number" name=""
                             id="manager" placeholder="Amount">
                     </div>
 
                     <div class="grid grid-cols-2">
                         <h3 class="pt-1 text-slate-400">Coach</h3>
                         <input class="bg-black border border-gray-200 rounded pl-2 py-1 w-full" type="number" name=""
-                            id="coach" placeholder="Amount" onkeyup="coachExpense()">
+                            id="coach" placeholder="Amount">
                     </div>
 
                     <button
