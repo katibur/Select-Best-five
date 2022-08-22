@@ -19,14 +19,24 @@ function playerName(playerNameId, playerButton) {
         disableButton.style.background = 'white';
         disableButton.style.color = 'red';
 
+
+        // findind the number of listed elements
         let orderderList = document.querySelectorAll("li");
 
         let order = parseInt(orderderList.length);
+        if (order > 5) {
+            alert('can not add more');
+            disableButton.disabled = false;
+            disableButton.style.background = 'blue';
+            disableButton.style.color = 'white';
+            list.removeChild(node);
+            return;
+        }
     })
 }
 
 
-
+// validation for per-player expense's input field
 function perPlayerExpense() {
     const perPlayerExpenseInput = document.getElementById('per-player');
     if (perPlayerExpenseInput.value < 0) {
@@ -38,20 +48,23 @@ function perPlayerExpense() {
 
 
 document.getElementById('calculate').addEventListener('click', function () {
+
     const perPlayerExpenseInputField = document.getElementById('per-player');
 
+    let orderderList = document.querySelectorAll("li");
 
-
-    const perPlayerExpense = parseFloat(perPlayerExpenseInputField.value);
-    const playerExpense = perPlayerExpense * 5;
+    let order = parseInt(orderderList.length);
 
     const playerExpenseShown = document.getElementById('palyer-expenses');
-    playerExpenseShown.innerText = parseFloat(playerExpense.toFixed('2'));
 
+    const perPlayerExpense = parseFloat(perPlayerExpenseInputField.value);
+    const playerExpense = perPlayerExpense * order;
+
+    playerExpenseShown.innerText = parseFloat(playerExpense.toFixed('2'));
 })
 
 
-
+// validation for manager expense's input field
 function managerExpense() {
     const managerExpenseInput = document.getElementById('manager');
     if (managerExpenseInput.value < 0) {
@@ -61,6 +74,8 @@ function managerExpense() {
     }
 }
 
+
+// validation for coach expense's input field
 function coachExpense() {
     const coachExpenseInput = document.getElementById('coach');
     if (coachExpenseInput.value < 0) {
@@ -71,6 +86,7 @@ function coachExpense() {
 }
 
 
+// calculate the total amount
 document.getElementById('calculate-total').addEventListener('click', function () {
 
     const playerExpenses = document.getElementById('palyer-expenses');

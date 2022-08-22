@@ -1,4 +1,4 @@
-//call the function from utilities.js file to select the player and disable the select button
+//call the function from utilities.js file to select the player and disable the select button using common function
 playerName('mashrafi-name', 'mashrafi-select-btn');
 playerName('ashraful-name', 'ashraful-select-btn');
 playerName('shakib-name', 'shakib-select-btn');
